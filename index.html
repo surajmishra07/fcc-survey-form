@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <h1>Hello World<h1>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey Form Description</p>
 
-    Hello Camper!
+    <div>
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="" id="name" required placeholder="Name" />
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="" id="email" required placeholder="Email" />
+        <label for="number" id="number-label">Number</label>
+        <input
+          type="number"
+          name=""
+          id="number"
+          min="18"
+          max="75"
+          placeholder="Enter a number"
+        />
+        <select name="" id="dropdown">
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+        </select>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+        <input type="radio" name="animal" id="radio-button" value="Cats" />
+        <input type="radio" name="animal" id="radio-button" value="Dogs" />
 
-    - The freeCodeCamp Team
+        <input type="checkbox" name="color" id="" value="pink" />
+        <input type="checkbox" name="color" id="" value="red" />
 
-    -->
-    <script  src="js/index.js"></script>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <button type="submit" id="submit"></button>
+      </form>
+    </div>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
